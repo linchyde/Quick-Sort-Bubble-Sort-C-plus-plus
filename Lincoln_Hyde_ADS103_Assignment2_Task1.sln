@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lincoln_Hyde_ADS103_Assignment2_Task1", "Lincoln_Hyde_ADS103_Assignment2_Task1.vcxproj", "{DFD582B1-9119-4543-839E-37A5402D2E43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Debug|x64.ActiveCfg = Debug|x64
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Debug|x64.Build.0 = Debug|x64
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Debug|x86.ActiveCfg = Debug|Win32
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Debug|x86.Build.0 = Debug|Win32
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Release|x64.ActiveCfg = Release|x64
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Release|x64.Build.0 = Release|x64
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Release|x86.ActiveCfg = Release|Win32
+		{DFD582B1-9119-4543-839E-37A5402D2E43}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E55D815-8E54-4081-A81D-6607B988E958}
+	EndGlobalSection
+EndGlobal
