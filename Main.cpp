@@ -52,9 +52,9 @@ void mySwap(vector<int> &text1, int i, int j) //swapping the values between i an
 
 }
 
-void mySwapSecondText(vector<int> &SecondTextFinal, int i, int j) //swapping the values between i and j
+void mySwapSecondText(vector<int> &SecondTextFinal, int i, int j) 
 {
-	int temp = SecondTextFinal[i];    //remeber the vector can still use the same notation to access things as an array
+	int temp = SecondTextFinal[i];    
 	SecondTextFinal[i] = SecondTextFinal[j];
 	SecondTextFinal[j] = temp;
 
@@ -85,18 +85,18 @@ void bubbleSort(vector<int> &text1)
 void bubbleSortSecondData(vector<int>& SecondText)
 {
 	bool sorted = false;
-	//loop until the data is sorted in the vector
+	
 	while (!sorted)
 	{
-		//assume that its sorted until proven otherwise
+		
 		sorted = true;
-		//loop through the vector looking for swaps that need doing
+		
 		for (int i = 0; i < SecondText.size() - 1; i++)
 		{
-			//do whatever is in the slots i and i +1
+			
 			if (SecondText[i] > SecondText[i + 1])
 			{
-				//true so swap it
+				
 				mySwapSecondText(SecondText, i, i + 1);
 				sorted = false;
 			}
@@ -137,32 +137,26 @@ int partition(vector <int> &text2, int low, int high)
 
 int partitionSecondData(vector <int>& SecondTextFinal, int low, int high)
 {
-	//can decide pivot selection in different ways e.g median of index, high or lows etc
-	//will use the value in the array at the low index position
 	int pivot = SecondTextFinal[low];
 	int i = low, j = high;
-	//loop until i and j cross paths
+	
 	while (i < j)
 	{
-		//i is looking for value in the array which is larger than pivot value
-		//moving to the right
 		do {
 			i++;
 		} while (i < SecondTextFinal.size() && SecondTextFinal[i] <= pivot); //stop the loop as soon as value is greater than pivot value
 
-		//j looks for value smaller than pivot value moving to the left
+		
 		do {
 			j--;
 		} while (j >= 0 && SecondTextFinal[j] > pivot);
-		//IF i and j havent crossed we can assume we have found a value larger than i 
-		//and a value smaller with j--- so swap them
+		
 		if (i < j)
 			swap(SecondTextFinal[i], SecondTextFinal[j]);
 	}
 
-	//once done swap the pivot value with wherever j anded up.
 	swap(SecondTextFinal[low], SecondTextFinal[j]);
-	//return j so that new quicksorts can partition work into two loads one to the left of j and one to the right of j
+	
 	return j;
 }
 
@@ -182,8 +176,8 @@ void quickSortSecondData(vector <int> &SecondTextFinal, int low, int high)
 	if (low < high)
 	{
 		int partitionIndex = partitionSecondData(SecondTextFinal, low, high);
-		quickSortSecondData(SecondTextFinal, low, partitionIndex); //splitting the data based on the partition index after the first run
-		quickSortSecondData(SecondTextFinal, partitionIndex + 1, high); //as above
+		quickSortSecondData(SecondTextFinal, low, partitionIndex); 
+		quickSortSecondData(SecondTextFinal, partitionIndex + 1, high); 
 	}
 }
 
